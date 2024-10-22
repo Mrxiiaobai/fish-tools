@@ -2,19 +2,25 @@
 
 # 启动
 
-## 1
+## 安装
 
-npm i
+安装：yarn
 
 "watch": "npm-run-all -p watch:\*",
 "watch:extension": "tsc -watch -p ./",
 "watch:views": "webpack --watch --mode development",
 
-## 2
+## 运行
 
 vscode -> 运行 -> 启动调试 -> 插件开发
 
-# 打包
+## 打包
+
+npm run compile
+
+npm i vsce -g
+
+npm run build
 
 # 作用
 

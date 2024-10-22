@@ -20,7 +20,6 @@ export const getWyHot = async () => {
   const url = "https://weibo.com/ajax/side/entertainment";
   try {
     const res = await ajax("GET", url);
-    console.log("🚀 ~ getWyHot ~ res:", res);
     const topHot = res?.data?.band_list || [];
     const isFail = typeof res == "string";
     return {
